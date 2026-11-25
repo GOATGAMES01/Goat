@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOAT | جـوت 🐐</title>
+    <!-- مكتبة الأيقونات الرسمية لضمان ظهور شعار إنستغرام وتيليجرام بوضوح -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(180deg, #090910 0%, #1a1829 50%, #2b2310 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 45px 16px;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 460px;
+            text-align: center;
+        }
+
+        /* الصورة الشخصية */
+        .profile-img {
+            width: 112px;
+            height: 112px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #FFD700;
+            box-shadow: 0 0 22px rgba(255, 215, 0, 0.4);
+            margin-bottom: 14px;
+            background-color: #111;
+        }
+
+        /* الاسم */
+        .name {
+            font-size: 28px;
+            font-weight: 900;
+            color: #FFD700;
+            margin-bottom: 6px;
+            letter-spacing: 0.5px;
+        }
+
+        /* الوصف */
+        .bio {
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 1.75;
+            color: #e2e8f0;
+            margin-bottom: 22px;
+        }
+
+        /* أيقونات التواصل الصغيرة (بدون دوائر - حرة مثل التصميم الأول) */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 28px;
+            margin-bottom: 30px;
+        }
+
+        .social-icons a {
+            color: #FFD700;
+            font-size: 30px;
+            text-decoration: none;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        .social-icons a:hover, .social-icons a:active {
+            transform: scale(1.2);
+            color: #ffffff;
+        }
+
+        /* حاوية الأزرار المستطيلة الكبيرة */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 100%;
+        }
+
+        /* تصميم الزر الكبير (نفس شكل الصورة بالضبط) */
+        .link-btn {
+            background-color: #ffffff;
+            color: #000000;
+            text-decoration: none;
+            padding: 14px 18px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 2px solid #FFD700;
+            box-shadow: 0px 5px 0px #B8860B;
+            transition: transform 0.12s ease, box-shadow 0.12s ease;
+        }
+
+        .link-btn:active {
+            transform: translateY(3px);
+            box-shadow: 0px 2px 0px #B8860B;
+        }
+
+        /* شعار التطبيق داخل الزر */
+        .btn-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            color: #ffffff;
+            flex-shrink: 0;
+        }
+
+        .tg-color {
+            background-color: #24A1DE;
+        }
+
+        .ig-color {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        .link-text {
+            flex: 1;
+            text-align: center;
+            padding: 0 10px;
+        }
+
+        .dots {
+            color: #777;
+            font-size: 18px;
+            padding-left: 4px;
+        }
+
+        /* زر نسخ الرابط */
+        .copy-btn {
+            margin-top: 32px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 215, 0, 0.35);
+            color: #FFD700;
+            padding: 10px 22px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .copy-btn:active {
+            background: rgba(255, 215, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- الصورة الشخصية -->
+        <img src="avatar.jpg" alt="GOAT" class="profile-img" onerror="this.src='https://ui-avatars.com'">
+
+        <!-- الاسم -->
+        <h1 class="name">GOAT | جـوت 🐐</h1>
+
+        <!-- الوصف -->
+        <p class="bio">
+            🎮 عالم الألعاب والترفيه بلا حدود 💛<br>
+            انضم الآن وتابع كل جديد على قنواتي الرسمية 👇
+        </p>
+
+        <!-- أيقونات التواصل الصغيرة بدون دوائر -->
+        <div class="social-icons">
+            <a href="https://t.me" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+
+        <!-- الأزرار المستطيلة الكبيرة -->
+        <div class="links">
+            
+            <!-- زر تيليجرام -->
+            <a href="https://t.me" target="_blank" rel="noopener noreferrer" class="link-btn">
+                <span class="btn-icon tg-color">
+                    <i class="fa-brands fa-telegram"></i>
+                </span>
+                <span class="link-text">قناتي الرسمية على تيليجرام</span>
+                <span class="dots">⋮</span>
+            </a>
+
+            <!-- زر إنستغرام -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="link-btn">
+                <span class="btn-icon ig-color">
+                    <i class="fa-brands fa-instagram"></i>
+                </span>
+                <span class="link-text">حسابي على إنستغرام | GOAT</span>
+                <span class="dots">⋮</span>
+            </a>
+
+        </div>
+
+        <!-- زر مشاركة الرابط -->
+        <button class="copy-btn" onclick="copyLink()">
+            <i class="fa-solid fa-link"></i>
+            <span id="copy-label">نسخ رابط الصفحة</span>
+        </button>
+    </div>
+
+    <script>
+        function copyLink() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                const label = document.getElementById('copy-label');
+                label.innerText = 'تم نسخ الرابط بنجاح! ✅';
+                setTimeout(() => {
+                    label.innerText = 'نسخ رابط الصفحة';
+                }, 2000);
+            });
+        }
+    </script>
+
+</body>
+</html>
